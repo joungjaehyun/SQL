@@ -4,7 +4,7 @@ select substr(hiredate,1,5) from emp;
 --17. SUBSTR 함수를 사용하여 4월에 입사한 사원을 출력하시오.
 
 select substr(hiredate,1,5) from emp
-where hiredate like '%04%';
+where substr(hiredate,1,5) like '%04%';
 
 ​-- 18. MOD 함수를 사용하여 사원번호가 짝수인 사람만 출력하시오.
 select ename, Mod(empno,2) from emp where mod(empno,2)=0;
