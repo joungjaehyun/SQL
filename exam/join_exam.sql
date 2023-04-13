@@ -45,10 +45,9 @@ from emp e, emp s
 where e.mgr = s.empno and e.deptno =20 and e.ename !='SCOTT';
 
 --41. SELF JOIN을 사용하여 WARD 사원보다 늦게 입사한 사원의 이름과 입사일을 출력하시오.
-select e.ename, m.hiredate
-from emp e join emp m
-on e.empno=m.mgr
-where e.hiredate>'81/02/22';
+select m.ename, m.hiredate
+from emp e ,emp m
+where e.hiredate<m.hiredate and e.ename='WARD';
 
 -- 42. SELF JOIN 을 사용하여
 -- 관리자보다 먼저 입사한 모든 사원의 이름 및 입사일을 
