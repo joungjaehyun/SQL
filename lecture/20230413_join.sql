@@ -74,6 +74,6 @@ order by e.mgr;
 
 -- 도서 판매 정보 출력
 select * from orders;
-select * 
+select o.orderid, c.name, b.bookname, o.saleprice, o.orderdate 
 from orders o , customer c, book b
 where o.custid=c.custid and o.bookid=b.bookid;
