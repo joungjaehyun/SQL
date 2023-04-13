@@ -2,7 +2,7 @@
 
 --(5) 박지성이구매한도서의출판사수
 
-select b.publisher
+select count(b.publisher)
 from book b join orders o
     on b.bookid= o.bookid
             join customer c
