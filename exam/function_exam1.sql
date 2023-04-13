@@ -30,7 +30,7 @@ select nvl(mgr,0) from emp;
 -- ‘CLERK”인 사원은 100을 인상하시오.
 select ename, job, sal,
     nvl(decode(job,
-    'ANALIST', sal +200,
+    'ANALYST', sal +200,
     'SALESMAN', sal+ 180,
     'MANAGER', sal+ 150,
     'CLERK' , sal+100),sal) as upSal
@@ -64,6 +64,10 @@ select mgr, count(*)
 from emp
 group by mgr
 having mgr is not null;
+
+-- 답
+select count(distinct mgr)
+from emp;
 --27. 급여 최고액, 급여 최저액의 차액을 출력하시오.
 select max(sal), min(sal), max(sal)-min(sal) as differenceSal
 from emp;
