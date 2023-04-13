@@ -25,7 +25,7 @@ on e.deptno = d.deptno
 where d.loc = 'NEW YORK';
 
 --38. SELF JOIN을 사용하여 사원의 이름 및 사원번호, 관리자 이름을 출력하시오.
-select e.ename, e.empno, nvl(m.ename,'nothing')
+select e.ename, e.empno, m.ename
 from emp e, emp m
 where e.mgr = m.empno;
 
