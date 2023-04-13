@@ -65,6 +65,11 @@ on o.bookid=b.bookid);
 
 
 --(13) 도서의판매액평균보다자신의구매액평균이더높은고객의이름
+select cs.name , avg(saleprice)
+from customer cs , orders o
+where cs.custid= o.custid 
+having avg(saleprice) > (select avg(saleprice) from orders)
+group by cs.name;
 
 --3. 마당서점에서 다음의 심화된 질문에 대해 SQL 문을 작성하시오.
 
