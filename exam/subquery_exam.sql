@@ -1,7 +1,8 @@
 --43. 사원 번호가 7788인 사원과 담당 업무가 같은 사원을 표시(사원 이름과 담당업무)하시오.
 
 select ename, job
-from emp where job = (select job from emp where empno=7788);
+from emp where job = (select job from emp where empno=7788)
+order by empno;
 
 -- 44. 사원번호가 7499인 사원보다 급여가 많은 사원을 표시하시오. 사원이름과 감당 업무
 select ename, job
