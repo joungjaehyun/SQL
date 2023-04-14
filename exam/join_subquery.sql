@@ -19,8 +19,7 @@ from book b join orders o
 
 --(7) 박지성이구매하지않은도서의이름
 select b.bookname 
-from book b 
-MINUS (select b.bookname 
+from book b where b.bookname not in (select b.bookname 
 from book b join orders o
     on b.bookid= o.bookid
             join customer c
@@ -65,10 +64,10 @@ on o.bookid=b.bookid);
 
 
 --(13) 도서의판매액평균보다자신의구매액평균이더높은고객의이름
-select cs.name , avg(saleprice)
+select cs.name , avg(o.saleprice)
 from customer cs , orders o
 where cs.custid= o.custid 
-having avg(saleprice) > (select avg(saleprice) from orders)
+having avg(o.saleprice) > (select avg(saleprice) from orders)
 group by cs.name;
 
 --3. 마당서점에서 다음의 심화된 질문에 대해 SQL 문을 작성하시오.
