@@ -175,3 +175,6 @@ select DEPT_DEPTNO_SEQ.nextval
 from dual;
 select * from dept01;
 insert into dept01 values(DEPT_DEPTNO_SEQ.nextval, 'test이름', 'test위치');
+
+select dept_deptno_seq.currval
+from dual;
