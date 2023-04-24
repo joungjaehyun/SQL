@@ -22,3 +22,9 @@ rollback;
 -- 4. 수정 update
 update dept set dname = 'AAA', loc = 'BBB' where deptno = 60;
 -- update dept set dname =?,loc =? where deptno =?;
+
+-- 5 : delete
+delete from dept where deptno = 60;
+--delete from dept where deptno = ?;
+
+rollback;
