@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="8" version="2.0">
+<workbench progressCount="14" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="208" y="208">
 <fastViewData fastViewLocation="1024">
@@ -20,7 +20,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="114" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -32,6 +32,8 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -39,8 +41,15 @@
 <editor id="com.tomato.exerd.editor.DiagramEditor" name="madang.exerd" partName="madang.exerd" path="C:/Users/hi/Documents/GitHub/SQL/erd/ERD/madang.exerd" title="madang.exerd" tooltip="ERD/madang.exerd" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ERD/madang.exerd"/>
 </editor>
-<editor focus="true" id="com.tomato.exerd.editor.DiagramEditor" name="board.exerd" partName="board.exerd" path="C:/Users/hi/Documents/GitHub/SQL/erd/ERD/board.exerd" title="board.exerd" tooltip="ERD/board.exerd" workbook="DefaultEditorWorkbook">
+<editor id="com.tomato.exerd.editor.DiagramEditor" name="board.exerd" partName="board.exerd" path="C:/Users/hi/Documents/GitHub/SQL/erd/ERD/board.exerd" title="board.exerd" tooltip="ERD/board.exerd" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ERD/board.exerd"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name=".project" partName=".project" path="C:/Users/hi/Documents/GitHub/SQL/erd/ERD/.project" title=".project" tooltip="ERD/.project" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ERD/.project"/>
+<editorState selectionLength="0" selectionOffset="0"/>
+</editor>
+<editor activePart="true" focus="true" id="com.tomato.exerd.editor.DiagramEditor" name="view.exerd" partName="view.exerd" path="C:/Users/hi/Documents/GitHub/SQL/erd/ERD/view.exerd" title="view.exerd" tooltip="ERD/view.exerd" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ERD/view.exerd"/>
 </editor>
 </editors>
 <views>
@@ -53,7 +62,7 @@
 <element path="/ERD"/>
 </expanded>
 <selection>
-<element path="/ERD/board.exerd"/>
+<element path="/ERD/madang.exerd"/>
 </selection>
 </viewState>
 </view>
@@ -77,7 +86,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.tomato.exerd.ui.views.domain" activePerspective="com.tomato.exerd.perspective.design">
+<perspectives activePart="com.tomato.exerd.editor.DiagramEditor" activePerspective="com.tomato.exerd.perspective.design">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.tomato.exerd.perspective.ExerdPerspectiveFactory" id="com.tomato.exerd.perspective.design" label="eXERD"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -185,6 +194,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" path="/ERD/madang.exerd"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/test/.project"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" path="/ERD/board.exerd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" path="/ERD/madang.exerd"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/ERD/.project"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" path="/ERD/view.exerd"/>
 </editors>
 <item historyLabel="madang.exerd" index="0"/>
 <item historyLabel="madang.exerd" index="0"/>
@@ -196,22 +208,19 @@
 <item historyLabel="madang.exerd" index="0"/>
 <item historyLabel="board.exerd" index="2"/>
 <item historyLabel="madang.exerd" index="0"/>
-<item active="true" historyLabel="board.exerd" index="2"/>
+<item historyLabel="board.exerd" index="2"/>
+<item historyLabel="madang.exerd" index="3"/>
+<item historyLabel=".project" index="4">
+<position/>
+</item>
+<item historyLabel="madang.exerd" index="3"/>
+<item active="true" historyLabel="view.exerd" index="5"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="leftFolder"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@43b128"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@eedb60"/>
-<trimItem IMemento.internal.id="rightFolder"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -219,11 +228,16 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottomFolder"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="view.exerd" tooltip="ERD/view.exerd">
+<persistable path="/ERD/view.exerd"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name=".project" tooltip="ERD/.project">
+<persistable path="/ERD/.project"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.tomato.exerd.editor.DiagramEditor" name="board.exerd" tooltip="ERD/board.exerd">
 <persistable path="/ERD/board.exerd"/>
 </file>
